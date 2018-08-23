@@ -3,16 +3,12 @@
  * HomePage
  *
  */
-
 import React, { Component } from "react";
-
 class HomePage extends Component {
   // eslint-disable-line react/prefer-stateless-function
-
   render() {
     return (
       <div>
-
         <div style={{ color: "#6b6161" }}>
           <div
             style={{
@@ -35,10 +31,8 @@ class HomePage extends Component {
             </span>
           </div>
         </div>
-
       </div>
     ); // eslint-disable-line
   }
 }
-
 export default HomePage;

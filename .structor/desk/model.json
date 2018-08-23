@@ -49,24 +49,146 @@
       "pagePath": "/work",
       "children": [
         {
-          "type": "div",
+          "type": "header",
+          "variant": "default",
+          "props": {
+            "style": {
+              "paddingTop": "65px",
+              "paddingBottom": "65px"
+            }
+          },
           "children": [
             {
-              "type": "h3",
+              "type": "Row",
+              "variant": "default",
+              "children": [
+                {
+                  "type": "Column",
+                  "variant": "default",
+                  "children": [],
+                  "namespace": "Layout",
+                  "props": {
+                    "col": 6,
+                    "mCol": 6
+                  }
+                },
+                {
+                  "type": "Column",
+                  "variant": "default",
+                  "children": [
+                    {
+                      "type": "span",
+                      "variant": "default",
+                      "props": {},
+                      "children": [],
+                      "text": "Work"
+                    }
+                  ],
+                  "namespace": "Layout",
+                  "props": {
+                    "col": 6,
+                    "mCol": 6
+                  }
+                }
+              ],
+              "namespace": "Layout",
               "props": {
                 "style": {
-                  "textAlign": "center",
-                  "padding": "15px"
+                  "paddingLeft": "30px",
+                  "paddingRight": "30px",
+                  "marginLeft": "auto",
+                  "marginRight": "auto"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "div",
+          "variant": "default",
+          "props": {
+            "style": {
+              "paddingTop": "150px"
+            }
+          },
+          "children": [
+            {
+              "type": "div",
+              "variant": "default",
+              "props": {
+                "style": {
+                  "marginBottom": "100px",
+                  "paddingRight": "30px",
+                  "paddingLeft": "30px",
+                  "marginLeft": "auto",
+                  "marginRight": "auto",
+                  "position": "relative"
                 }
               },
               "children": [
                 {
-                  "type": "span",
-                  "text": "work page"
+                  "type": "p",
+                  "variant": "default",
+                  "props": {
+                    "style": {
+                      "position": "absolute",
+                      "left": "50%",
+                      "transform": "translateX(-50%)"
+                    }
+                  },
+                  "children": [
+                    {
+                      "type": "span",
+                      "variant": "default",
+                      "props": {
+                        "style": {
+                          "marginBottom": "50px",
+                          "fontSize": "10.15vw",
+                          "fontWeight": 400,
+                          "left": "50%",
+                          "transform": "translateX(-50%)",
+                          "color": "#1106FF"
+                        }
+                      },
+                      "children": [],
+                      "text": "Jessi Van"
+                    },
+                    {
+                      "type": "span",
+                      "variant": "default",
+                      "props": {
+                        "style": {
+                          "marginBottom": "50px",
+                          "fontSize": "10.15vw",
+                          "display": "block",
+                          "fontWeight": 400,
+                          "position": "absolute",
+                          "left": "50%",
+                          "transform": "translateX(-50%)",
+                          "color": "#1106FF"
+                        }
+                      },
+                      "children": [],
+                      "text": "Jessi Van"
+                    }
+                  ]
                 }
               ]
             }
           ]
+        },
+        {
+          "type": "div",
+          "variant": "default",
+          "props": {
+            "style": {
+              "paddingRight": "30px",
+              "paddingLeft": "30px",
+              "marginLeft": "auto",
+              "marginRight": "auto"
+            }
+          },
+          "children": []
         }
       ]
     }
