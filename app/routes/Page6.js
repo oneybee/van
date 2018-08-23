@@ -20,10 +20,18 @@ class Page6 extends Component {
             }}
           >
             <Column col={6} mCol={6} />
-            <Column col={6} mCol={6}><span>Work</span></Column>
+            <Column col={6} mCol={6}>
+              <span>Work</span><span>About</span>
+            </Column>
           </Row>
         </header>
-        <div style={{ paddingTop: "150px" }}>
+        <div
+          style={{
+            paddingTop: "150px",
+            marginBottom: "50px",
+            paddingBottom: "50px"
+          }}
+        >
           <div
             style={{
               marginBottom: "100px",
@@ -36,36 +44,32 @@ class Page6 extends Component {
           >
             <p
               style={{
-                position: "absolute",
                 left: "50%",
-                transform: "translateX(-50%)"
+                transform: "translateX(-50%)",
+                position: "absolute"
               }}
             >
               <span
                 style={{
-                  marginBottom: "50px",
                   fontSize: "10.15vw",
                   fontWeight: 400,
-                  left: "50%",
-                  transform: "translateX(-50%)",
-                  color: "#1106FF"
+                  color: "#1106FF",
+                  display: "block"
                 }}
               >
                 Jessi Van
               </span>
               <span
                 style={{
-                  marginBottom: "50px",
-                  fontSize: "10.15vw",
-                  display: "block",
-                  fontWeight: 400,
-                  position: "absolute",
+                  fontWeight: 300,
                   left: "50%",
-                  transform: "translateX(-50%)",
-                  color: "#1106FF"
+                  fontSize: "19px",
+                  width: "75%",
+                  color: "#C5C5C5",
+                  marginTop: "15px"
                 }}
               >
-                Jessi Van
+                Hi! I'm a Product Designer based in Oakland, California.
               </span>
             </p>
           </div>
@@ -77,7 +81,74 @@ class Page6 extends Component {
             marginLeft: "auto",
             marginRight: "auto"
           }}
-        />
+        >
+          <Row style={{ marginBottom: "75px" }}>
+            <Column
+              col={6}
+              mCol={6}
+              style={{
+                paddingLeft: "15px",
+                paddingRight: "15px",
+                marginBottom: "30px"
+              }}
+            >
+              <a href="#" style={{ display: "block" }}>
+                <img
+                  src="http://www.jessievan.com/images/grid-projects/MBTV.png"
+                  style={{ width: "100%" }}
+                />
+              </a>
+            </Column>
+            <Column
+              col={6}
+              mCol={6}
+              style={{
+                paddingLeft: "15px",
+                paddingRight: "15px",
+                marginBottom: "30px"
+              }}
+            >
+              <a href="#" style={{ display: "block" }}>
+                <img
+                  src="http://www.jessievan.com/images/grid-projects/Coleman.png"
+                  style={{ width: "100%" }}
+                />
+              </a>
+            </Column>
+            <Column
+              col={6}
+              mCol={6}
+              style={{
+                paddingLeft: "15px",
+                paddingRight: "15px",
+                marginBottom: "30px"
+              }}
+            >
+              <a href="#" style={{ display: "block" }}>
+                <img
+                  src="http://www.jessievan.com/images/grid-projects/Coleman.png"
+                  style={{ width: "100%" }}
+                />
+              </a>
+            </Column>
+            <Column
+              col={6}
+              mCol={6}
+              style={{
+                paddingLeft: "15px",
+                paddingRight: "15px",
+                marginBottom: "30px"
+              }}
+            >
+              <a href="#" style={{ display: "block" }}>
+                <img
+                  src="http://www.jessievan.com/images/grid-projects/Coleman.png"
+                  style={{ width: "100%" }}
+                />
+              </a>
+            </Column>
+          </Row>
+        </div>
       </div>
     ); // eslint-disable-line
   }

@@ -4,31 +4,64 @@
  *
  */
 import React, { Component } from "react";
+import { Row, Column } from "modules/Layout";
 class HomePage extends Component {
   // eslint-disable-line react/prefer-stateless-function
   render() {
     return (
       <div>
-        <div style={{ color: "#6b6161" }}>
-          <div
+        <header style={{ paddingTop: "65px", paddingBottom: "65px" }}>
+          <Row
             style={{
-              height: "100px",
-              backgroundColor: "#fcecd7",
-              borderRadius: "4px",
-              textAlign: "center",
-              paddingTop: "40px",
-              paddingBottom: "40px"
+              paddingLeft: "30px",
+              paddingRight: "30px",
+              marginLeft: "auto",
+              marginRight: "auto"
             }}
           >
-            <span
+            <Column col={6} mCol={6} />
+            <Column col={6} mCol={6}>
+              <span>Work</span><span>About</span>
+            </Column>
+          </Row>
+        </header>
+        <div
+          style={{
+            paddingTop: "150px",
+            marginBottom: "50px",
+            paddingBottom: "50px"
+          }}
+        >
+          <div
+            style={{
+              marginBottom: "100px",
+              paddingRight: "30px",
+              paddingLeft: "30px",
+              marginLeft: "auto",
+              marginRight: "auto",
+              position: "relative"
+            }}
+          >
+            <p
               style={{
-                lineHeight: "20px",
-                backgroundColor: "#b8e986",
-                color: "#4a90e2"
+                left: "50%",
+                transform: "translateX(-50%)",
+                position: "absolute"
               }}
             >
-              Hello Colorful World 🖍🖍
-            </span>
+              <span
+                style={{
+                  fontSize: "10.15vw",
+                  fontWeight: 400,
+                  color: "#1106FF",
+                  display: "block",
+                  width: "90%",
+                  margin: "0 auto"
+                }}
+              >
+                I enjoy figuring out how to make things work better.
+              </span>
+            </p>
           </div>
         </div>
       </div>
