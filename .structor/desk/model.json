@@ -72,8 +72,8 @@
           "props": {
             "style": {
               "paddingTop": "150px",
-              "marginBottom": "50px",
-              "paddingBottom": "50px"
+              "paddingBottom": "400px",
+              "marginBottom": "50px"
             }
           },
           "children": [
@@ -85,9 +85,10 @@
                   "marginBottom": "100px",
                   "paddingRight": "30px",
                   "paddingLeft": "30px",
-                  "marginLeft": "auto",
+                  "marginLeft": "0px",
                   "marginRight": "auto",
-                  "position": "relative"
+                  "position": "relative",
+                  "display": "block"
                 }
               },
               "children": [
@@ -98,7 +99,8 @@
                     "style": {
                       "left": "50%",
                       "transform": "translateX(-50%)",
-                      "position": "absolute"
+                      "position": "absolute",
+                      "display": "inline-block"
                     }
                   },
                   "children": [
@@ -110,7 +112,6 @@
                           "fontSize": "10.15vw",
                           "fontWeight": 400,
                           "color": "#1106FF",
-                          "display": "block",
                           "width": "90%",
                           "margin": "0 auto"
                         }
@@ -123,6 +124,120 @@
               ]
             }
           ]
+        },
+        {
+          "type": "div",
+          "variant": "default",
+          "props": {
+            "style": {
+              "paddingRight": "30px",
+              "paddingLeft": "30px"
+            }
+          },
+          "children": [
+            {
+              "type": "div",
+              "variant": "default",
+              "props": {
+                "style": {
+                  "marginTop": "20px",
+                  "marginLeft": "-15px",
+                  "marginRight": "-15px"
+                }
+              },
+              "children": [
+                {
+                  "type": "p",
+                  "variant": "default",
+                  "props": {
+                    "style": {
+                      "paddingLeft": "15px",
+                      "paddingRight": "15px",
+                      "color": "#1106FF"
+                    }
+                  },
+                  "children": [
+                    {
+                      "type": "span",
+                      "text": "I care about the details and consider the motion design of affordances to be crucial in creating effective, intuitive interfaces. I consider prototyping to be my weapon of choice in thinking through interaction models and new possibilities.",
+                      "props": {
+                        "style": {
+                          "marginBottom": "10px",
+                          "fontSize": "21px",
+                          "fontWeight": 300,
+                          "display": "block"
+                        }
+                      }
+                    },
+                    {
+                      "type": "span",
+                      "text": "I thrive on learning new things — I enjoy exploring new paths to familiar places. I really love snowboarding (I like both park and powder days). I also really enjoy exploring the amazing trails and landscapes around the bay area on my mountain bike. I’ve travelled a lot and enjoy seeing things from a fresh perspective :)",
+                      "props": {
+                        "style": {
+                          "marginBottom": "10px",
+                          "fontSize": "21px",
+                          "fontWeight": 300,
+                          "display": "block",
+                          "paddingTop": "8px"
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "Row",
+          "variant": "default",
+          "children": [
+            {
+              "type": "Column",
+              "variant": "default",
+              "children": [
+                {
+                  "type": "img",
+                  "variant": "default",
+                  "props": {
+                    "src": "http://www.jessievan.com/images/about/photo-1.png",
+                    "style": {
+                      "width": "100%"
+                    }
+                  },
+                  "children": []
+                }
+              ],
+              "namespace": "Layout",
+              "props": {
+                "col": 6,
+                "mCol": 6
+              }
+            },
+            {
+              "type": "Column",
+              "variant": "default",
+              "children": [
+                {
+                  "type": "img",
+                  "variant": "default",
+                  "props": {
+                    "src": "http://www.jessievan.com/images/about/photo-3.png",
+                    "style": {
+                      "width": "100%"
+                    }
+                  },
+                  "children": []
+                }
+              ],
+              "namespace": "Layout",
+              "props": {
+                "col": 6,
+                "mCol": 6
+              }
+            }
+          ],
+          "namespace": "Layout"
         }
       ]
     },

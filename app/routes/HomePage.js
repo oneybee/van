@@ -28,8 +28,8 @@ class HomePage extends Component {
         <div
           style={{
             paddingTop: "150px",
-            marginBottom: "50px",
-            paddingBottom: "50px"
+            paddingBottom: "400px",
+            marginBottom: "50px"
           }}
         >
           <div
@@ -37,16 +37,18 @@ class HomePage extends Component {
               marginBottom: "100px",
               paddingRight: "30px",
               paddingLeft: "30px",
-              marginLeft: "auto",
+              marginLeft: "0px",
               marginRight: "auto",
-              position: "relative"
+              position: "relative",
+              display: "block"
             }}
           >
             <p
               style={{
                 left: "50%",
                 transform: "translateX(-50%)",
-                position: "absolute"
+                position: "absolute",
+                display: "inline-block"
               }}
             >
               <span
@@ -54,7 +56,6 @@ class HomePage extends Component {
                   fontSize: "10.15vw",
                   fontWeight: 400,
                   color: "#1106FF",
-                  display: "block",
                   width: "90%",
                   margin: "0 auto"
                 }}
@@ -64,6 +65,59 @@ class HomePage extends Component {
             </p>
           </div>
         </div>
+        <div style={{ paddingRight: "30px", paddingLeft: "30px" }}>
+          <div
+            style={{
+              marginTop: "20px",
+              marginLeft: "-15px",
+              marginRight: "-15px"
+            }}
+          >
+            <p
+              style={{
+                paddingLeft: "15px",
+                paddingRight: "15px",
+                color: "#1106FF"
+              }}
+            >
+              <span
+                style={{
+                  marginBottom: "10px",
+                  fontSize: "21px",
+                  fontWeight: 300,
+                  display: "block"
+                }}
+              >
+                I care about the details and consider the motion design of affordances to be crucial in creating effective, intuitive interfaces. I consider prototyping to be my weapon of choice in thinking through interaction models and new possibilities.
+              </span>
+              <span
+                style={{
+                  marginBottom: "10px",
+                  fontSize: "21px",
+                  fontWeight: 300,
+                  display: "block",
+                  paddingTop: "8px"
+                }}
+              >
+                I thrive on learning new things — I enjoy exploring new paths to familiar places. I really love snowboarding (I like both park and powder days). I also really enjoy exploring the amazing trails and landscapes around the bay area on my mountain bike. I’ve travelled a lot and enjoy seeing things from a fresh perspective :)
+              </span>
+            </p>
+          </div>
+        </div>
+        <Row>
+          <Column col={6} mCol={6}>
+            <img
+              src="http://www.jessievan.com/images/about/photo-1.png"
+              style={{ width: "100%" }}
+            />
+          </Column>
+          <Column col={6} mCol={6}>
+            <img
+              src="http://www.jessievan.com/images/about/photo-3.png"
+              style={{ width: "100%" }}
+            />
+          </Column>
+        </Row>
       </div>
     ); // eslint-disable-line
   }
