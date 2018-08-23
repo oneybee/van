@@ -40,6 +40,54 @@
                       "text": "Work"
                     },
                     {
+                      "type": "Frame",
+                      "variant": "default",
+                      "children": [
+                        {
+                          "type": "Hover",
+                          "variant": "default",
+                          "children": [
+                            {
+                              "type": "Animate",
+                              "variant": "default",
+                              "children": [
+                                {
+                                  "type": "span",
+                                  "variant": "default",
+                                  "props": {},
+                                  "children": [],
+                                  "text": "Animate me"
+                                }
+                              ],
+                              "namespace": "Animation",
+                              "props": {
+                                "to": {
+                                  "color": "pink"
+                                },
+                                "style": {
+                                  "textAlign": "center"
+                                },
+                                "color": "pink",
+                                "hover": {}
+                              }
+                            }
+                          ],
+                          "namespace": "Animation",
+                          "props": {
+                            "to": {
+                              "color": "pink"
+                            },
+                            "color": "pink",
+                            "transition": {
+                              "target": "all"
+                            }
+                          }
+                        }
+                      ],
+                      "namespace": "Animation",
+                      "props": {}
+                    },
+                    {
                       "type": "span",
                       "variant": "default",
                       "props": {},
@@ -87,7 +135,6 @@
                   "paddingLeft": "30px",
                   "marginLeft": "0px",
                   "marginRight": "auto",
-                  "position": "relative",
                   "display": "block"
                 }
               },
@@ -97,10 +144,8 @@
                   "variant": "default",
                   "props": {
                     "style": {
-                      "left": "50%",
-                      "transform": "translateX(-50%)",
-                      "position": "absolute",
-                      "display": "inline-block"
+                      "display": "inline-block",
+                      "position": "relative"
                     }
                   },
                   "children": [
@@ -112,12 +157,30 @@
                           "fontSize": "10.15vw",
                           "fontWeight": 400,
                           "color": "#1106FF",
-                          "width": "90%",
-                          "margin": "0 auto"
+                          "display": "block",
+                          "transform": "translateX(-50%)",
+                          "left": "50%",
+                          "position": "absolute"
                         }
                       },
                       "children": [],
                       "text": "I enjoy figuring out how to make things work better."
+                    },
+                    {
+                      "type": "span",
+                      "variant": "default",
+                      "props": {
+                        "style": {
+                          "fontSize": "10.15vw",
+                          "fontWeight": 400,
+                          "color": "#1106FF",
+                          "display": "block",
+                          "position": "relative",
+                          "left": "50%"
+                        }
+                      },
+                      "children": [],
+                      "text": "make things work better."
                     }
                   ]
                 }
@@ -491,7 +554,7 @@
                           "type": "img",
                           "variant": "default",
                           "props": {
-                            "src": "http://www.jessievan.com/images/grid-projects/Coleman.png",
+                            "src": "http://www.jessievan.com/images/grid-projects/Razorfish-App.png",
                             "style": {
                               "width": "100%"
                             }
@@ -522,7 +585,8 @@
                       "props": {
                         "href": "#",
                         "style": {
-                          "display": "block"
+                          "display": "block",
+                          "marginTop": "-65px"
                         }
                       },
                       "children": [
@@ -530,7 +594,7 @@
                           "type": "img",
                           "variant": "default",
                           "props": {
-                            "src": "http://www.jessievan.com/images/grid-projects/Coleman.png",
+                            "src": "http://www.jessievan.com/images/grid-projects/IOT-Window.png",
                             "style": {
                               "width": "100%"
                             }
@@ -558,6 +622,49 @@
                   "marginBottom": "75px"
                 }
               }
+            }
+          ]
+        },
+        {
+          "type": "div",
+          "variant": "default",
+          "props": {
+            "style": {
+              "position": "relative",
+              "minWidth": "400px",
+              "heitght": "480px"
+            }
+          },
+          "children": [
+            {
+              "type": "img",
+              "variant": "default",
+              "props": {
+                "src": "https://pro2-bar-s3-cdn-cf3.myportfolio.com/e63b121980737e2194086a9850ceea9c/e35bda9b-c93c-4ced-bc18-cecc25612803_rwc_8x0x3180x1400x640.jpg?h=b2ba15917d9ddfe30e9ff7566743a8b2 640w, https://pro2-bar-s3-cdn-cf3.myportfolio.com/e63b121980737e2194086a9850ceea9c/e35bda9b-c93c-4ced-bc18-cecc25612803_rwc_8x0x3180x1400x1280.jpg?h=83797645ddfe0863fd011012d32e66e1 1280w, https://pro2-bar-s3-cdn-cf3.myportfolio.com/e63b121980737e2194086a9850ceea9c/e35bda9b-c93c-4ced-bc18-cecc25612803_rwc_8x0x3180x1400x1366.jpg?h=c4c2bd8b2ec544a4698759687ab7f0e1 1366w, https://pro2-bar-s3-cdn-cf3.myportfolio.com/e63b121980737e2194086a9850ceea9c/e35bda9b-c93c-4ced-bc18-cecc25612803_rwc_8x0x3180x1400x1920.jpg?h=de757559712fb9bc425f03c87abbd73a 1920w, https://pro2-bar-s3-cdn-cf3.myportfolio.com/e63b121980737e2194086a9850ceea9c/e35bda9b-c93c-4ced-bc18-cecc25612803_rwc_8x0x3180x1400x2560.jpg?h=fa8368d5027c0849ad032331999845a3 2560w, https://pro2-bar-s3-cdn-cf3.myportfolio.com/e63b121980737e2194086a9850ceea9c/e35bda9b-c93c-4ced-bc18-cecc25612803_rwc_8x0x3180x1400x3180.jpg?h=23aad1836d0ed2eec5407cb416b1eafa",
+                "style": {
+                  "width": "100%",
+                  "position": "relative",
+                  "heitght": "100%"
+                }
+              },
+              "children": []
+            },
+            {
+              "type": "p",
+              "variant": "default",
+              "props": {
+                "style": {
+                  "position": "absolute",
+                  "left": "50%",
+                  "transform": "translateXs(-50%)"
+                }
+              },
+              "children": [
+                {
+                  "type": "span",
+                  "text": "Empty p"
+                }
+              ]
             }
           ]
         }
