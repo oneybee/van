@@ -644,25 +644,27 @@
                 "style": {
                   "width": "100%",
                   "position": "relative",
-                  "heitght": "100%"
-                }
-              },
-              "children": []
-            },
-            {
-              "type": "p",
-              "variant": "default",
-              "props": {
-                "style": {
-                  "position": "absolute",
-                  "left": "50%",
-                  "transform": "translateXs(-50%)"
+                  "heitght": "100%",
+                  "backgroundSize": "cover"
                 }
               },
               "children": [
                 {
-                  "type": "span",
-                  "text": "Empty p"
+                  "type": "p",
+                  "variant": "default",
+                  "props": {
+                    "style": {
+                      "position": "absolute",
+                      "left": "50%",
+                      "transform": "translateXs(-50%)"
+                    }
+                  },
+                  "children": [
+                    {
+                      "type": "span",
+                      "text": "Empty p"
+                    }
+                  ]
                 }
               ]
             }
