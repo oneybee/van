@@ -5,6 +5,9 @@
  */
 import React, { Component } from "react";
 import { Row, Column } from "modules/Layout";
+
+import { wem } from "ruucm-blocks/tools/mixins";
+import { isMobile } from "ruucm-blocks/tools/media";
 class HomePage extends Component {
   // eslint-disable-line react/prefer-stateless-function
   render() {
@@ -21,14 +24,15 @@ class HomePage extends Component {
           >
             <Column col={6} mCol={6} />
             <Column col={6} mCol={6}>
-              <span>Work</span><span>About</span>
+              <span>Work</span>
+              <span>About</span>
             </Column>
           </Row>
         </header>
         <div
           style={{
             paddingTop: "150px",
-            paddingBottom: "400px",
+            paddingBottom: wem(400),
             marginBottom: "50px"
           }}
         >
@@ -55,7 +59,8 @@ class HomePage extends Component {
                 style={{
                   fontSize: "10.15vw",
                   fontWeight: 400,
-                  color: "#1106FF",
+                  color: isMobile() ? "#1106FF" : "pink",
+                  backgroundColor: isMobile() ? "gray" : "blue",
                   width: "90%",
                   margin: "0 auto"
                 }}
@@ -83,12 +88,15 @@ class HomePage extends Component {
               <span
                 style={{
                   marginBottom: "10px",
-                  fontSize: "21px",
+                  fontSize: wem(50), // 21px goes to 21/1920 * 100vw = 1.09vw
                   fontWeight: 300,
                   display: "block"
                 }}
               >
-                I care about the details and consider the motion design of affordances to be crucial in creating effective, intuitive interfaces. I consider prototyping to be my weapon of choice in thinking through interaction models and new possibilities.
+                I care about the details and consider the motion design of
+                affordances to be crucial in creating effective, intuitive
+                interfaces. I consider prototyping to be my weapon of choice in
+                thinking through interaction models and new possibilities.
               </span>
               <span
                 style={{
@@ -98,8 +106,14 @@ class HomePage extends Component {
                   display: "block",
                   paddingTop: "8px"
                 }}
+                className="test"
               >
-                I thrive on learning new things — I enjoy exploring new paths to familiar places. I really love snowboarding (I like both park and powder days). I also really enjoy exploring the amazing trails and landscapes around the bay area on my mountain bike. I’ve travelled a lot and enjoy seeing things from a fresh perspective :)
+                I thrive on learning new things — I enjoy exploring new paths to
+                familiar places. I really love snowboarding (I like both park
+                and powder days). I also really enjoy exploring the amazing
+                trails and landscapes around the bay area on my mountain bike.
+                I’ve travelled a lot and enjoy seeing things from a fresh
+                perspective :)
               </span>
             </p>
           </div>
